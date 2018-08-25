@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">YassAndroid</string>
+
+    <!--   工具类  tag -->
+    <item type="id" name="tag_viewholder"></item>
+    <item type="id" name="tag_listdata"></item>
+    <item type="id" name="tag_viewclick"></item>
+
+    <!-- 登录 -->
+    <string name="login_uid">员工号：</string>
+    <string name="login_pwd">密    码：</string>
+    <string name="login_uid_hint">请输入用户名</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_msg_fail">登录失败</string>
+    <string name="login_msg_invaluid">用户名不能为空</string>
+    <string name="login_msg_invalpwd">密码不能为空</string>
+    <string name="login_msg_invaluser">请先清除上次登录账户的缓存数据</string>
+    <string name="login_msg_invalgrid">用户所属定格变更，请先清除上次登录账户的缓存数据</string>
+    <string name="login_msg_invaldate">系统时间误差较大，请调整系统时间</string>
+    <string name="login_msg_usererror">用户信息异常，不能正常登录</string>
+    <string name="login_msg_progress">登录中...</string>
+    <string name="login_msg_online">登录成功</string>
+    <string name="login_msg_offline">离线登录成功</string>
+    <string name="login_msg_pwdfail">登录失败，确认用户名及密码。</string>
+    <string name="login_msg_userice">该用户已离职或冻结！</string>
+    <string name="login_msg_device">该设备已冻结！</string>
+    <string name="login_msg_nogrid">未分配定格，请联系管理员。</string>
+
+    <!-- 运营管理中的指标状态查询 -->
+    <string name="indexstatus_banner_title">指标状态查询</string>
+    <string name="indexstatus_label_line">选择线路：</string>
+    <string name="indexstatus_label_date">截止时间：</string>
+    <string name="indexstatus_label_index">选择指标：</string>
+    <string name="indexstatus_label_value">指标标准：</string>
+    <string name="indexstatus_label_pro">选择产品：</string>
+    <string name="indexstatus_bt_prolst">请选择产品</string>
+    <string name="indexstatus_lv_title_pro">产品</string>
+    <string name="indexstatus_lv_title_select_index">指标</string>
+    <string name="indexstatus_lv_title_index_standard">标准</string>
+    <string name="indexstatus_lv_title_prorate">以前</string>
+    <string name="indexstatus_lv_title_change">变化量</string>
+    <string name="indexstatus_labelitem_line">铺货率查询</string>
+    <string name="indexstatus_labelitem_grid">定格</string>
+    <string name="indexstatus_dialogpro_title">产品选择</string>
+    <string name="indexstatus_msg_update">请先更新数据</string>
+    <string name="indexstatus_msg_line">请选择线路</string>
+    <string name="indexstatus_msg_check">请选择指标</string>
+    <string name="indexstatus_msg_check_title">指标选择</string>
+    <string name="indexstatus_msg_value">请选择指标值</string>
+    <string name="indexstatus_msg_values">请选择指标标准</string>
+    <string name="indexstatus_msg_value_title">指标标准选择</string>
+
+</resources>
