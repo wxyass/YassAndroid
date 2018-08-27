@@ -81,7 +81,7 @@ public class SyssettingFragment extends BaseFragment implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.dd_system_rl_repwd:// 修改密码
-                YearLowFragment lowFragment = new YearLowFragment();
+                LowFragment lowFragment = new LowFragment();
                 //((BaseFragment) getParentFragment()).
                         start(lowFragment);
                 break;

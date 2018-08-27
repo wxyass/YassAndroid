@@ -19,12 +19,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.core.app.Latte;
+import com.core.ui.loader.LatteLoader;
+import com.core.utils.dbtutil.CheckUtil;
+import com.core.utils.dbtutil.PrefUtils;
 import com.yass.R;
 import com.yass.base.BaseActivity;
-import com.yass.core.app.Latte;
-import com.yass.core.ui.loader.LatteLoader;
-import com.yass.core.utils.dbtutil.CheckUtil;
-import com.yass.core.utils.dbtutil.PrefUtils;
 import com.yass.main.ConstValues;
 import com.yass.main.MainActivity;
 

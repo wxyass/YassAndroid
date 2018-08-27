@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
+import com.core.net.RestClient;
+import com.core.net.callback.IError;
+import com.core.net.callback.IFailure;
+import com.core.net.callback.ISuccess;
+import com.core.utils.dbtutil.CheckUtil;
+import com.core.utils.dbtutil.DateUtil;
+import com.core.utils.dbtutil.FunUtil;
+import com.core.utils.dbtutil.JsonUtil;
+import com.core.utils.dbtutil.PrefUtils;
+import com.core.utils.dbtutil.PropertiesUtil;
 import com.yass.R;
-import com.yass.core.net.RestClient;
-import com.yass.core.net.callback.IError;
-import com.yass.core.net.callback.IFailure;
-import com.yass.core.net.callback.ISuccess;
-import com.yass.core.utils.dbtutil.CheckUtil;
-import com.yass.core.utils.dbtutil.DateUtil;
-import com.yass.core.utils.dbtutil.FunUtil;
-import com.yass.core.utils.dbtutil.JsonUtil;
-import com.yass.core.utils.dbtutil.PrefUtils;
-import com.yass.core.utils.dbtutil.PropertiesUtil;
 import com.yass.login.domain.BsVisitEmpolyeeStc;
 import com.yass.main.ConstValues;
 import com.yass.utils.HttpParseJson;
@@ -227,6 +227,7 @@ public class LoginService {
         message.setData(bundle);
         handler.sendMessage(message);
     }
+
     // 直接进入MainActivity
     private void sendMsg2(Object msg, boolean isSuccess, String isrepassword) {
         Bundle bundle = new Bundle();

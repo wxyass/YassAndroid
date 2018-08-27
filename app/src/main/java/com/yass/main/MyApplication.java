@@ -3,12 +3,12 @@ package com.yass.main;
 import android.app.Application;
 import android.content.Context;
 
+import com.core.app.Latte;
+import com.core.icon.FontEcModule;
+import com.core.net.HttpUrl;
+import com.core.net.interceptors.DebugInterceptor;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.yass.R;
-import com.yass.core.app.Latte;
-import com.yass.core.icon.FontEcModule;
-import com.yass.core.net.HttpUrl;
-import com.yass.core.net.interceptors.DebugInterceptor;
 
 import me.yokeyword.fragmentation.BuildConfig;
 import me.yokeyword.fragmentation.Fragmentation;

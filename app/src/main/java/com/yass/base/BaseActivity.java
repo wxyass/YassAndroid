@@ -18,9 +18,10 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import com.yass.core.initbase.InitActivity;
-import com.yass.core.initbase.InitValues;
-import com.yass.core.utils.exit.ExitAppUtils;
+
+import com.core.initbase.InitActivity;
+import com.core.initbase.InitValues;
+import com.core.utils.exit.ExitAppUtils;
 
 import java.lang.ref.SoftReference;
 import java.util.List;

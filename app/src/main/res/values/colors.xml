@@ -7,12 +7,6 @@
     <!--app背景颜色-->
     <color name="bg_app">#F2F2F2</color>
 
-    <!-- listview的条目背景色 -->
-    <color name="bg_lv_item">#f8f8f9</color>
-
-    <!-- listview列表中横竖线的颜色值 -->
-    <color name="listview_line">#dedcda</color>
-
     <!--登录按钮颜色-->
     <color name="color_fed952">#fed952</color>
     <color name="color_cccccc">#cccccc</color>

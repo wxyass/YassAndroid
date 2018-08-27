@@ -71,6 +71,7 @@ public class MainActivity extends BaseActivity implements BaseMainFragment.OnBac
         setupNewTabIcons();// 设置底部菜单的图标
     }
 
+    // 设置底部菜单的图标
     private void setupNewTabIcons() {
         for (int i = 0; i < tabIndicators.size(); i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.tab_layout_item, null);

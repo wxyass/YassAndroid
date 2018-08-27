@@ -2,11 +2,9 @@ package com.yass.main;
 
 import android.os.Handler;
 
+import com.core.initbase.InitValues;
+import com.core.initbase.KvStc;
 
-import com.yass.core.initbase.InitValues;
-import com.yass.core.initbase.KvStc;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
