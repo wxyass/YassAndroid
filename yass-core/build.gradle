@@ -68,6 +68,5 @@ dependencies {
     implementation files('libs/commons-lang-2.6.jar')
     implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/sun.misc.BASE64Decoder.jar')
-    implementation files('libs/IntfBean-0.0.1.jar')
-    implementation files('libs/IntfStc-0.0.1.jar')
+
 }
