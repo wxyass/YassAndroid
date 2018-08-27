@@ -25,6 +25,7 @@
     <string name="login_msg_userice">该用户已离职或冻结！</string>
     <string name="login_msg_device">该设备已冻结！</string>
     <string name="login_msg_nogrid">未分配定格，请联系管理员。</string>
+    <string name="msg_err_netfail">网络请求失败</string>
 
     <!-- 运营管理中的指标状态查询 -->
     <string name="indexstatus_banner_title">指标状态查询</string>

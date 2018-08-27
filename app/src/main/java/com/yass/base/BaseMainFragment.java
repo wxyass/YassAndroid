@@ -2,17 +2,15 @@ package com.yass.base;
 
 import android.content.Context;
 
-import com.yass.core.initbase.InitFragment;
 import com.yass.first.FirstFragment;
 
 import me.yokeyword.fragmentation.SupportFragment;
 
 /**
  * 导航页基础Fragment
- *
  * Created by wxyass on 2018/8/17.
  */
-public class BaseMainFragment extends InitFragment {
+public class BaseMainFragment extends SupportFragment {
     protected OnBackToFirstListener _mBackToFirstListener;
 
     @Override

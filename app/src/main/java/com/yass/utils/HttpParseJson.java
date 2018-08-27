@@ -2,8 +2,6 @@ package com.yass.utils;
 
 import android.util.Log;
 
-import com.yass.core.net.domain.RequestStructBean;
-import com.yass.core.net.domain.ResponseStructBean;
 import com.yass.core.utils.dbtutil.CheckUtil;
 import com.yass.core.utils.dbtutil.GZIP;
 import com.yass.core.utils.dbtutil.JsonUtil;
@@ -15,6 +13,8 @@ import java.io.UnsupportedEncodingException;
 
 import Decoder.BASE64Decoder;
 import Decoder.BASE64Encoder;
+import cn.com.benyoyo.manage.Struct.RequestStructBean;
+import cn.com.benyoyo.manage.Struct.ResponseStructBean;
 
 /**
  * Created by yangwenmin on 2017/12/7.

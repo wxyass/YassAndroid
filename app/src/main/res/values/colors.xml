@@ -4,10 +4,28 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--app背景颜色-->
+    <color name="bg_app">#F2F2F2</color>
+
     <!-- listview的条目背景色 -->
     <color name="bg_lv_item">#f8f8f9</color>
 
     <!-- listview列表中横竖线的颜色值 -->
     <color name="listview_line">#dedcda</color>
+
+    <!--登录按钮颜色-->
+    <color name="color_fed952">#fed952</color>
+    <color name="color_cccccc">#cccccc</color>
+    <!--浅灰色-->
+    <color name="color_e5e5e5">#e5e5e5</color>
+
+
+    <!--标题栏颜色-->
+    <color name="first_title">#4AC777</color>
+    <!-- mt绿色 -->
+    <color name="home_mt">#23ac38</color>
+
+    <!--标题 返回按钮字体颜色-->
+    <color name="gray_color_333333">#333333</color>
 
 </resources>

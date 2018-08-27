@@ -29,6 +29,15 @@ public class MyApplication extends Application {
 
         MyApplication.context = getApplicationContext();
 
+
+        // 建议在Application里初始化
+        Fragmentation.builder()
+                // 显示悬浮球 ; 其他Mode:SHAKE: 摇一摇唤出   NONE：隐藏
+                .stackViewMode(Fragmentation.BUBBLE)
+                .debug(BuildConfig.DEBUG)
+                // 更多查看wiki或demo
+                .install();
+
         // 通过全局配置器,配置参数
         Latte.init(this)// 配置ApplicationContext,全局handler
                 .withIcon(new FontAwesomeModule())// 配置字体图标
@@ -38,12 +47,6 @@ public class MyApplication extends Application {
                 .configure();// 修改→配置完成的标记true
 
 
-        // 建议在Application里初始化
-        Fragmentation.builder()
-                // BUBBLE显示悬浮球 ; SHAKE: 摇一摇唤出 ;  NONE：隐藏
-                .stackViewMode(Fragmentation.BUBBLE)
-                .debug(BuildConfig.DEBUG)
-                .install();
     }
 
     public static Context getAppContext() {

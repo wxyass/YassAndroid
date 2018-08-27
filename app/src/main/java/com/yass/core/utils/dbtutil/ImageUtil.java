@@ -10,7 +10,6 @@ import android.graphics.Rect;
 
 /**
  * 图片工具类
- * @author PeggyTong
  *
  */
 public class ImageUtil {

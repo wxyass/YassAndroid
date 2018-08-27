@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.yass.R;
 import com.yass.base.BaseMainFragment;
+import com.yass.syssetting.SyssettingFragment;
 
 
 /**
@@ -36,7 +37,7 @@ public class ThirdFragment extends BaseMainFragment {
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
         if(findChildFragment(ThirdFragment.class)==null){
-            // loadRootFragment(R.id.fl_first_container, FirstHomeFragment.newInstance());
+            loadRootFragment(R.id.fl_third_container, SyssettingFragment.newInstance());
         }
     }
 }

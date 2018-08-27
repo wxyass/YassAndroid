@@ -36,7 +36,7 @@ public class MainActivity extends BaseActivity implements BaseMainFragment.OnBac
             R.drawable.selector_tab_image_thrid,
             R.drawable.selector_tab_image_fourth
     };
-    private MainAdapter contentAdapter;
+    private MainAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +53,10 @@ public class MainActivity extends BaseActivity implements BaseMainFragment.OnBac
     private void initContent() {
         tabIndicators = new ArrayList<>();
         tabIndicators.add("首页");
-        tabIndicators.add("巡店管理");
-        tabIndicators.add("运营管理");
+        tabIndicators.add("新闻游戏");
+        tabIndicators.add("科技军事");
         tabIndicators.add("系统管理");
+
 
         tabFragments = new ArrayList<>();
         tabFragments.add(FirstFragment.newInstance());
@@ -63,8 +64,9 @@ public class MainActivity extends BaseActivity implements BaseMainFragment.OnBac
         tabFragments.add(ThirdFragment.newInstance());
         tabFragments.add(FourthFragment.newInstance());
 
-        contentAdapter = new MainAdapter(getSupportFragmentManager(), tabFragments, tabIndicators);
-        mViewPager.setAdapter(contentAdapter);
+
+        mainAdapter = new MainAdapter(getSupportFragmentManager(), tabFragments, tabIndicators);
+        mViewPager.setAdapter(mainAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
         setupNewTabIcons();// 设置底部菜单的图标
     }
