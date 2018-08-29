@@ -13,7 +13,6 @@ import android.widget.ListView;
 import android.widget.RadioGroup;
 
 import com.yass.R;
-import com.yass.main.ConstValues;
 
 
 /**

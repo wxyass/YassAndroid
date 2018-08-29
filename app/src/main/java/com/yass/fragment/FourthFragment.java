@@ -1,4 +1,4 @@
-package com.yass.syssetting;
+package com.yass.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,10 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.yass.R;
-import com.yass.base.BaseFragment;
+import com.yass.base.BaseMainFragment;
+import com.yass.main.MainFragment;
+import com.yass.syssetting.LowFragment;
+import com.yass.video.common.CommonVideoFragment;
 
 
 /**
@@ -17,7 +20,7 @@ import com.yass.base.BaseFragment;
  *
  * Created by wxyass on 2018/8/17.
  */
-public class SyssettingFragment extends BaseFragment implements View.OnClickListener{
+public class FourthFragment extends BaseMainFragment implements View.OnClickListener{
 
     private RelativeLayout backBtn;
     private RelativeLayout confirmBtn;
@@ -33,12 +36,12 @@ public class SyssettingFragment extends BaseFragment implements View.OnClickList
 
     private View rootView;//缓存Fragment view
 
-    public SyssettingFragment() {
+    public FourthFragment() {
     }
 
-    public static SyssettingFragment newInstance(){
+    public static FourthFragment newInstance(){
         Bundle args = new Bundle();
-        SyssettingFragment fragment = new SyssettingFragment();
+        FourthFragment fragment = new FourthFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -46,7 +49,7 @@ public class SyssettingFragment extends BaseFragment implements View.OnClickList
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_fourthimpl,container,false);
+        View view = inflater.inflate(R.layout.fragment_syssetting,container,false);
         initView(view);
         return view;
     }
@@ -80,12 +83,11 @@ public class SyssettingFragment extends BaseFragment implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.dd_system_rl_repwd:// 修改密码
-                LowFragment lowFragment = new LowFragment();
-                //((BaseFragment) getParentFragment()).
-                        start(lowFragment);
+            case R.id.dd_system_rl_repwd:// Fragment跳转
+                ((MainFragment) getParentFragment()).start(new LowFragment());
                 break;
-            case R.id.dd_system_rl_question:// 问题反馈
+            case R.id.dd_system_rl_question:// 普通视频
+                ((MainFragment) getParentFragment()).start(new CommonVideoFragment());
                 break;
             case R.id.dd_system_rl_upload:// 检查更新
 
@@ -102,7 +104,7 @@ public class SyssettingFragment extends BaseFragment implements View.OnClickList
     @Override
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
-        /*if(findChildFragment(SyssettingFragment.class)==null){
+        /*if(findChildFragment(FourthFragment.class)==null){
             // loadRootFragment(R.id.fl_first_container, FirstHomeFragment.newInstance());
         }*/
     }

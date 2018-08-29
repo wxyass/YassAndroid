@@ -7,6 +7,7 @@
 
     <include layout="@layout/top_navigation"/>
 
+
     <!-- 修改密码 -->
     <RelativeLayout
         android:id="@+id/dd_system_rl_repwd"
@@ -28,7 +29,7 @@
             android:id="@+id/dd_system_tv_repwd"
             style="@style/system_title_text"
             android:layout_toRightOf="@id/system_tv01"
-            android:text="修改密码"/>
+            android:text="Fragment跳转"/>
 
     </RelativeLayout>
 
@@ -53,8 +54,7 @@
             android:id="@+id/dd_system_tv_question"
             style="@style/system_title_text"
             android:layout_toRightOf="@id/system_tv02"
-            android:text="问题反馈"/>
-
+            android:text="普通视频"/>
 
     </RelativeLayout>
 

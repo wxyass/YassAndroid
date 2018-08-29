@@ -1,4 +1,4 @@
-package com.yass.visit;
+package com.yass.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,15 +11,15 @@ import com.yass.base.BaseMainFragment;
 
 
 /**
- * 第二个导航页
+ * 第一个导航页
  *
  * Created by wxyass on 2018/8/17.
  */
-public class SecondFragment extends BaseMainFragment {
+public class FirstFragment extends BaseMainFragment {
 
-    public static SecondFragment newInstance(){
+    public static FirstFragment newInstance(){
         Bundle args = new Bundle();
-        SecondFragment fragment = new SecondFragment();
+        FirstFragment fragment = new FirstFragment();
         fragment.setArguments(args);
         return fragment;
 
@@ -28,15 +28,17 @@ public class SecondFragment extends BaseMainFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_second,container,false);
+        View view = inflater.inflate(R.layout.fragment_first,container,false);
         return view;
     }
 
     @Override
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
-        if(findChildFragment(SecondFragment.class)==null){
+        if(findChildFragment(FirstFragment.class)==null){
             // loadRootFragment(R.id.fl_first_container, FirstHomeFragment.newInstance());
+
+
         }
     }
 }

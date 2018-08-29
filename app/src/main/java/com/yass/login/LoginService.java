@@ -17,7 +17,7 @@ import com.core.utils.dbtutil.PrefUtils;
 import com.core.utils.dbtutil.PropertiesUtil;
 import com.yass.R;
 import com.yass.login.domain.BsVisitEmpolyeeStc;
-import com.yass.main.ConstValues;
+import com.yass.utils.ConstValues;
 import com.yass.utils.HttpParseJson;
 
 import java.util.Date;

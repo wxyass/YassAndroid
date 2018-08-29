@@ -34,7 +34,8 @@ public class MyApplication extends Application {
         Fragmentation.builder()
                 // 显示悬浮球 ; 其他Mode:SHAKE: 摇一摇唤出   NONE：隐藏
                 .stackViewMode(Fragmentation.BUBBLE)
-                .debug(BuildConfig.DEBUG)
+                //.debug(BuildConfig.DEBUG)// // 该值是true时（即debug环境），stackViewMode才会生效； 否则不显示
+                .debug(true)// // 该值是true时（即debug环境），stackViewMode才会生效； 否则不显示
                 // 更多查看wiki或demo
                 .install();
 

@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.yass.R;
 import com.yass.base.BaseActivity;
-import com.yass.main.ConstValues;
+import com.yass.utils.ConstValues;
 
 
 @SuppressLint("HandlerLeak")
