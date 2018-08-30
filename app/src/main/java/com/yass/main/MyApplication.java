@@ -10,7 +10,6 @@ import com.core.net.interceptors.DebugInterceptor;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.yass.R;
 
-import me.yokeyword.fragmentation.BuildConfig;
 import me.yokeyword.fragmentation.Fragmentation;
 
 /**
@@ -45,8 +44,14 @@ public class MyApplication extends Application {
                 .withIcon(new FontEcModule())// 配置另一种字体图标
                 .withApiHost(HttpUrl.API_HOST)// 配置ApiHost
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))// 拦截url请求中包含test的url请求
+                .withJavascriptInterface("latte")
+                //添加Cookie同步拦截器
+                .withWebHost("https://www.baidu.com/")
                 .configure();// 修改→配置完成的标记true
 
+
+        // 崩溃收集
+        CrashHandler.getInstance().init(this);
 
     }
 

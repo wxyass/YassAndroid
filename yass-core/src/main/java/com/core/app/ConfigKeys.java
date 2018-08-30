@@ -13,5 +13,12 @@ public enum ConfigKeys {
     ICON,// 已配置的图片字体的key
     INTERCEPTOR,// 拦截器的key
     ACTIVITY,
-    HANDLER
+    HANDLER,
+
+
+    LOADER_DELAYED,
+    WE_CHAT_APP_ID,
+    WE_CHAT_APP_SECRET,
+    JAVASCRIPT_INTERFACE,
+    WEB_HOST
 }

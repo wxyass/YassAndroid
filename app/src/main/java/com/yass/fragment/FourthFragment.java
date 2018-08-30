@@ -8,11 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.core.web.WebDelegateImpl;
 import com.yass.R;
 import com.yass.base.BaseMainFragment;
 import com.yass.main.MainFragment;
 import com.yass.syssetting.LowFragment;
 import com.yass.video.common.CommonVideoFragment;
+import com.yass.webview.WebFragment;
 
 
 /**
@@ -89,10 +91,17 @@ public class FourthFragment extends BaseMainFragment implements View.OnClickList
             case R.id.dd_system_rl_question:// 普通视频
                 ((MainFragment) getParentFragment()).start(new CommonVideoFragment());
                 break;
-            case R.id.dd_system_rl_upload:// 检查更新
+            case R.id.dd_system_rl_upload:// 个人博客
+                /*final WebDelegateImpl wxyassblogs = WebDelegateImpl.create("http://wxyass.com/");
+                // delegate.setTopDelegate(getParentFragment());
+                ((MainFragment) getParentFragment()).start(wxyassblogs);*/
 
+                ((MainFragment) getParentFragment()).start(new WebFragment());
                 break;
-            case R.id.dd_system_rl_about:// 关于系统
+            case R.id.dd_system_rl_about:// 私人定制
+                final WebDelegateImpl delegate = WebDelegateImpl.create("http://c.n.h.k.s8ziyuan.space/forum.php");
+                // delegate.setTopDelegate(getParentFragment());
+                ((MainFragment) getParentFragment()).start(delegate);
                 break;
             case R.id.dd_system_rl_exit:// 退出系统
                 System.exit(0);
