@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/system_tv03"
-            style="@style/system_title"
+            style="@style/system_title_img"
             android:background="@drawable/icon_set_update"/>
 
         <!--本地视频-->
@@ -45,7 +45,7 @@
 
         <TextView
             android:id="@+id/system_tv04"
-            style="@style/system_title"
+            style="@style/system_title_img"
             android:background="@drawable/icon_set_sys"/>
 
         <!--网络视频-->

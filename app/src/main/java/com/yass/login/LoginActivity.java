@@ -25,7 +25,7 @@ import com.core.utils.dbtutil.CheckUtil;
 import com.core.utils.dbtutil.PrefUtils;
 import com.yass.R;
 import com.yass.base.BaseActivity;
-import com.yass.utils.ConstValues;
+import com.yass.main.ConstValues;
 import com.yass.main.MainActivity;
 
 import java.lang.ref.SoftReference;

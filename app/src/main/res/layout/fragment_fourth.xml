@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_app"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_navigation"/>
+
+
+    <!-- Fragment跳转 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_01"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_password"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_1"/>
+
+    </LinearLayout>
+
+    <!-- 普通视频 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_02"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_que"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_2"/>
+
+    </LinearLayout>
+
+    <!-- Fragment中嵌套WebView -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_03"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_update"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_3"/>
+    </LinearLayout>
+
+    <!-- 整体Fragment嵌套WebView -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_04"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_sys"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_4"/>
+
+    </LinearLayout>
+
+    <!-- 退出系统 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_05"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_quit"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_5"/>
+    </LinearLayout>
+    <!-- Activity跳转 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_06"
+        style="@style/system_title_all">
+
+        <TextView
+            style="@style/system_title_img"
+            android:background="@drawable/icon_set_quit"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_6"/>
+    </LinearLayout>
+
+
+</LinearLayout>

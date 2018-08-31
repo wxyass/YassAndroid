@@ -1,4 +1,4 @@
-package com.yass.syssetting;
+package com.yass.low;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,7 +11,7 @@ import com.yass.base.BaseFragment;
 
 
 /**
- * 测试页
+ * 测试 跳转Fragment
  *
  * Created by wxyass on 2018/8/17.
  */

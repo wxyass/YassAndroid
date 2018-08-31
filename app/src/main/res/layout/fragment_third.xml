@@ -16,306 +16,198 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!-- 1 -->
-            <RelativeLayout
-                android:id="@+id/third_rl_repwd"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/third_rl_1"
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv01"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_angry"/>
 
                 <TextView
-                    android:id="@+id/third_tv_repwd"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv01"
                     android:text="1"/>
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <!-- 2 -->
-            <RelativeLayout
-                android:id="@+id/third_rl_question"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/third_rl_2"
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv02"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_basic"/>
 
                 <!--2-->
                 <TextView
-                    android:id="@+id/third_tv_question"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv02"
                     android:text="2"/>
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <!-- 3 -->
-            <RelativeLayout
-                android:id="@+id/third_rl_upload"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/third_rl_3"
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv03"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_cool"/>
 
                 <!--3-->
                 <TextView
-                    android:id="@+id/third_tv_upload"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv03"
                     android:text="3"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <!-- 4 -->
-            <RelativeLayout
-                android:id="@+id/third_rl_about"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/third_rl_4"
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv04"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_cry"/>
 
                 <!--4-->
                 <TextView
-                    android:id="@+id/third_tv_about"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv04"
                     android:text="4"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <!-- 5 -->
-            <RelativeLayout
-                android:id="@+id/third_rl_exit"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/third_rl_5"
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv05"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_err"/>
 
                 <!--5-->
                 <TextView
-                    android:id="@+id/third_tv_exit"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv05"
                     android:text="5"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 6 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_6"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv05_6"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_evil"/>
 
                 <!--6-->
                 <TextView
-                    android:id="@+id/third_tv_6"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv05_6"
                     android:text="6"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 7 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_7"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv07"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_kiss"/>
 
                 <!--7-->
                 <TextView
-                    android:id="@+id/third_tv_7"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv07"
                     android:text="7"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 8 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_8"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv08"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_laugh"/>
 
                 <!--8-->
                 <TextView
-                    android:id="@+id/third_tv_8"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv08"
                     android:text="8"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 9 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_9"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv09"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_shame"/>
 
                 <!--9-->
                 <TextView
-                    android:id="@+id/third_tv_9"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv09"
                     android:text="9"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 10 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_10"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv10"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_tongue"/>
 
                 <!--10-->
                 <TextView
-                    android:id="@+id/third_tv_10"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv10"
                     android:text="10"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 11 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_11"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv11"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_wink"/>
 
                 <!--11-->
                 <TextView
-                    android:id="@+id/third_tv_11"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv11"
                     android:text="11"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
             <!-- 12 -->
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/third_rl_12"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_select_white_gray"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:visibility="visible">
+                style="@style/system_title_all">
 
                 <TextView
-                    android:id="@+id/third_tv12"
-                    style="@style/system_title"
+                    style="@style/system_title_img"
                     android:background="@drawable/ic_action_emo_wonder"/>
 
                 <!--12-->
                 <TextView
-                    android:id="@+id/third_tv_12"
                     style="@style/system_title_text"
-                    android:layout_toRightOf="@id/third_tv12"
                     android:text="12"/>
 
 
-            </RelativeLayout>
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
