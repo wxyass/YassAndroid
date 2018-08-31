@@ -91,16 +91,11 @@ public class FourthFragment extends BaseMainFragment implements View.OnClickList
             case R.id.dd_system_rl_question:// 普通视频
                 ((MainFragment) getParentFragment()).start(new CommonVideoFragment());
                 break;
-            case R.id.dd_system_rl_upload:// 个人博客
-                /*final WebDelegateImpl wxyassblogs = WebDelegateImpl.create("http://wxyass.com/");
-                // delegate.setTopDelegate(getParentFragment());
-                ((MainFragment) getParentFragment()).start(wxyassblogs);*/
-
+            case R.id.dd_system_rl_upload:// Fragment中嵌套WebView
                 ((MainFragment) getParentFragment()).start(new WebFragment());
                 break;
-            case R.id.dd_system_rl_about:// 私人定制
-                final WebDelegateImpl delegate = WebDelegateImpl.create("http://c.n.h.k.s8ziyuan.space/forum.php");
-                // delegate.setTopDelegate(getParentFragment());
+            case R.id.dd_system_rl_about:// 整体Fragment
+                final WebDelegateImpl delegate = WebDelegateImpl.create("http://wxyass.com/");
                 ((MainFragment) getParentFragment()).start(delegate);
                 break;
             case R.id.dd_system_rl_exit:// 退出系统

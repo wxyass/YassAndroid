@@ -8,11 +8,11 @@
     <include layout="@layout/top_navigation"/>
 
 
-    <!-- 修改密码 -->
+    <!-- Fragment跳转 -->
     <RelativeLayout
         android:id="@+id/dd_system_rl_repwd"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_select_white_gray"
         android:clickable="true"
@@ -33,11 +33,11 @@
 
     </RelativeLayout>
 
-    <!-- 问题反馈 -->
+    <!-- 普通视频 -->
     <RelativeLayout
         android:id="@+id/dd_system_rl_question"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_select_white_gray"
         android:clickable="true"
@@ -58,11 +58,11 @@
 
     </RelativeLayout>
 
-    <!-- 个人博客 -->
+    <!-- Fragment中嵌套WebView -->
     <RelativeLayout
         android:id="@+id/dd_system_rl_upload"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_select_white_gray"
         android:clickable="true"
@@ -74,21 +74,21 @@
             style="@style/system_title"
             android:background="@drawable/icon_set_update"/>
 
-        <!--个人博客-->
+        <!--Fragment中嵌套WebView-->
         <TextView
             android:id="@+id/dd_system_tv_upload"
             style="@style/system_title_text"
             android:layout_toRightOf="@id/system_tv03"
-            android:text="个人博客"/>
+            android:text="Fragment中嵌套WebView"/>
 
 
     </RelativeLayout>
 
-    <!-- 私人定制 -->
+    <!-- 整体Fragment -->
     <RelativeLayout
         android:id="@+id/dd_system_rl_about"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_select_white_gray"
         android:clickable="true"
@@ -100,12 +100,12 @@
             style="@style/system_title"
             android:background="@drawable/icon_set_sys"/>
 
-        <!--私人定制-->
+        <!--整体Fragment-->
         <TextView
             android:id="@+id/dd_system_tv_about"
             style="@style/system_title_text"
             android:layout_toRightOf="@id/system_tv04"
-            android:text="私人定制"/>
+            android:text="整体Fragment"/>
 
 
     </RelativeLayout>
@@ -114,7 +114,7 @@
     <RelativeLayout
         android:id="@+id/dd_system_rl_exit"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_select_white_gray"
         android:clickable="true"

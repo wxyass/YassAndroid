@@ -19,10 +19,10 @@ import me.yokeyword.fragmentation.SupportFragment;
 
 /**
  * WebFragment  (嵌套FrameLayout)
- *
+ * <p>
  * Created by wxyass on 2018/8/17.
  */
-public class WebFragment extends BaseFragment implements View.OnClickListener{
+public class WebFragment extends BaseFragment implements View.OnClickListener {
 
 
     public static final int LOCAL = 0; // 本地
@@ -45,7 +45,7 @@ public class WebFragment extends BaseFragment implements View.OnClickListener{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_web_common,container,false);
+        View view = inflater.inflate(R.layout.fragment_web_common, container, false);
         initView(view);
         return view;
     }
@@ -76,10 +76,8 @@ public class WebFragment extends BaseFragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.dd_system_rl_local:// 本地视频
-                //loadRootFragment(R.id.web_fl_container, VideoListFragment.newInstance(LOCAL));
                 break;
             case R.id.dd_system_rl_online:// 网络视频
-                //loadRootFragment(R.id.web_fl_container, VideoListFragment.newInstance(ONLINE));
                 break;
         }
     }

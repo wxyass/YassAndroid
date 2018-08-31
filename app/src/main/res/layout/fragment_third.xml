@@ -1,7 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/fl_third_container"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@android:color/white">
-</FrameLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_app"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_navigation"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 1 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_repwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv01"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_angry"/>
+
+                <TextView
+                    android:id="@+id/third_tv_repwd"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv01"
+                    android:text="1"/>
+
+            </RelativeLayout>
+
+            <!-- 2 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_question"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv02"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_basic"/>
+
+                <!--2-->
+                <TextView
+                    android:id="@+id/third_tv_question"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv02"
+                    android:text="2"/>
+
+            </RelativeLayout>
+
+            <!-- 3 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_upload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv03"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_cool"/>
+
+                <!--3-->
+                <TextView
+                    android:id="@+id/third_tv_upload"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv03"
+                    android:text="3"/>
+
+
+            </RelativeLayout>
+
+            <!-- 4 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv04"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_cry"/>
+
+                <!--4-->
+                <TextView
+                    android:id="@+id/third_tv_about"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv04"
+                    android:text="4"/>
+
+
+            </RelativeLayout>
+
+            <!-- 5 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_exit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv05"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_err"/>
+
+                <!--5-->
+                <TextView
+                    android:id="@+id/third_tv_exit"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv05"
+                    android:text="5"/>
+
+
+            </RelativeLayout>
+            <!-- 6 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv05_6"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_evil"/>
+
+                <!--6-->
+                <TextView
+                    android:id="@+id/third_tv_6"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv05_6"
+                    android:text="6"/>
+
+
+            </RelativeLayout>
+            <!-- 7 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv07"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_kiss"/>
+
+                <!--7-->
+                <TextView
+                    android:id="@+id/third_tv_7"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv07"
+                    android:text="7"/>
+
+
+            </RelativeLayout>
+            <!-- 8 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv08"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_laugh"/>
+
+                <!--8-->
+                <TextView
+                    android:id="@+id/third_tv_8"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv08"
+                    android:text="8"/>
+
+
+            </RelativeLayout>
+            <!-- 9 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv09"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_shame"/>
+
+                <!--9-->
+                <TextView
+                    android:id="@+id/third_tv_9"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv09"
+                    android:text="9"/>
+
+
+            </RelativeLayout>
+            <!-- 10 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv10"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_tongue"/>
+
+                <!--10-->
+                <TextView
+                    android:id="@+id/third_tv_10"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv10"
+                    android:text="10"/>
+
+
+            </RelativeLayout>
+            <!-- 11 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv11"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_wink"/>
+
+                <!--11-->
+                <TextView
+                    android:id="@+id/third_tv_11"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv11"
+                    android:text="11"/>
+
+
+            </RelativeLayout>
+            <!-- 12 -->
+            <RelativeLayout
+                android:id="@+id/third_rl_12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/third_tv12"
+                    style="@style/system_title"
+                    android:background="@drawable/ic_action_emo_wonder"/>
+
+                <!--12-->
+                <TextView
+                    android:id="@+id/third_tv_12"
+                    style="@style/system_title_text"
+                    android:layout_toRightOf="@id/third_tv12"
+                    android:text="12"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

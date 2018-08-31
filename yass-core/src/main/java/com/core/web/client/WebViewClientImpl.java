@@ -45,7 +45,8 @@ public class WebViewClientImpl extends WebViewClient {
         if (mIPageLoadListener != null) {
             mIPageLoadListener.onLoadStart();
         }
-        LatteLoader.showLoading(view.getContext());
+        // 默认展示的 Loading页面 // false: 点击不可隐藏滚动条  true:点击可隐藏滚动
+        LatteLoader.showLoading(view.getContext(),true);
     }
 
     //获取浏览器cookie
