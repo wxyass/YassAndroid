@@ -10,12 +10,12 @@ import android.widget.LinearLayout;
 
 import com.core.web.WebDelegateImpl;
 import com.yass.R;
+import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseMainFragment;
 import com.yass.harvic.paintbasis.BasisViewFragment;
-import com.yass.low.LowFragment;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
-import com.yass.toolbar.ToolBarFragment;
+import com.yass.toolbar.ToolBarDemoFragment;
 import com.yass.video.common.CommonVideoFragment;
 import com.yass.webview.WebFragment;
 
@@ -111,10 +111,10 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
                 ((MainFragment) getParentFragment()).start(delegate);
                 break;
             case R.id.third_rl_5:// toolbar的使用
-                ((MainFragment) getParentFragment()).start(new ToolBarFragment());
+                ((MainFragment) getParentFragment()).start(new ToolBarDemoFragment());
                 break;
             case R.id.third_rl_6:// AppbarLayout的简单用法
-                _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
+                ((MainFragment) getParentFragment()).start(new AppbarLayoutDemoFragment());
                 break;
             case R.id.third_rl_7://
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));

@@ -1,8 +1,7 @@
-package com.yass.toolbar;
+package com.yass.appbarlayout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,16 +11,13 @@ import com.yass.base.BaseFragment;
 
 
 /**
- * 使用Toolbar
+ * AppbarLayout的使用
  *
  * Created by wxyass on 2018/8/17.
  */
-public class ToolBarFragment extends BaseFragment {
+public class AppbarLayoutDemoFragment extends BaseFragment {
 
-    private Toolbar toolbar;
-
-
-    public ToolBarFragment() {
+    public AppbarLayoutDemoFragment() {
     }
 
     // 接收传递过来的参数
@@ -34,14 +30,13 @@ public class ToolBarFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_toolbar,container,false);
+        View view = inflater.inflate(R.layout.fragment_appbarlayout,container,false);
         initView(view);
         return view;
     }
 
     private void initView(View view) {
 
-         toolbar = view.findViewById(R.id.toolbar);
     }
 
     // 加载数据
@@ -55,13 +50,6 @@ public class ToolBarFragment extends BaseFragment {
     }
 
     private void initData() {
-
-
-        initToolbarNav(toolbar);
-
-        // 1 在res资源下增加一个"menu"目录, 添加一个menu_main.xml菜单文件.
-
-
 
     }
 }
