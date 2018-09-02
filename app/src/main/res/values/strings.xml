@@ -35,4 +35,18 @@
     <string name="fourth_msg_5">退出系统</string>
     <string name="fourth_msg_6">Activity跳转</string>
 
+    <!-- third -->
+    <string name="third_msg_1">1 自定义控件之开篇</string>
+    <string name="third_msg_2">2 自定义控件之动画篇</string>
+    <string name="third_msg_3">3 自定义控件之绘图篇</string>
+    <string name="third_msg_4">4 自定义控件之视图篇</string>
+    <string name="third_msg_5">5 Toolbar的使用</string>
+    <string name="third_msg_6">6 AppbarLayout的简单用法</string>
+    <string name="third_msg_7">7</string>
+    <string name="third_msg_8">8</string>
+    <string name="third_msg_9">9</string>
+    <string name="third_msg_10">10</string>
+    <string name="third_msg_11">11</string>
+    <string name="third_msg_12">12</string>
+
 </resources>
