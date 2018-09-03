@@ -24,6 +24,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     implementation project(':yass-core')
+    implementation project(':yass-ijk')
 
     implementation files('libs/IntfBean-0.0.1.jar')
     implementation files('libs/IntfStc-0.0.1.jar')

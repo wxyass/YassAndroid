@@ -120,7 +120,7 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
             case R.id.third_rl_7:// 语音
                 ((MainFragment) getParentFragment()).start(new YuyinFragment());
                 break;
-            case R.id.third_rl_8://
+            case R.id.third_rl_8:// ijk框架播放网络视频
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
                 break;
             case R.id.third_rl_9://
