@@ -23,6 +23,19 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']  /**在libs文件夹下找so文件*/
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
 }
 
 dependencies {
@@ -40,4 +53,6 @@ dependencies {
     compile "com.android.support:support-v13:$rootProject.v4Version"
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile(name: 'ijkplayer-java-release', ext: 'aar')
 }
