@@ -77,4 +77,8 @@ dependencies {
     //Log
     compile 'com.orhanobut:logger:2.1.1'
 
+    // 科大讯飞语音读写
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+
 }

@@ -18,6 +18,7 @@ import com.yass.main.MainFragment;
 import com.yass.toolbar.ToolBarDemoFragment;
 import com.yass.video.common.CommonVideoFragment;
 import com.yass.webview.WebFragment;
+import com.yass.yuyin.YuyinFragment;
 
 
 /**
@@ -116,8 +117,8 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
             case R.id.third_rl_6:// AppbarLayout的简单用法
                 ((MainFragment) getParentFragment()).start(new AppbarLayoutDemoFragment());
                 break;
-            case R.id.third_rl_7://
-                _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
+            case R.id.third_rl_7:// 语音
+                ((MainFragment) getParentFragment()).start(new YuyinFragment());
                 break;
             case R.id.third_rl_8://
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));

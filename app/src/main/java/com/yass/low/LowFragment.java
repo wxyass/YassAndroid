@@ -1,13 +1,21 @@
 package com.yass.low;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.core.web.WebDelegateImpl;
 import com.yass.R;
+import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseFragment;
+import com.yass.harvic.paintbasis.BasisViewFragment;
+import com.yass.main.MainFragment;
+import com.yass.toolbar.ToolBarDemoFragment;
+import com.yass.video.common.CommonVideoFragment;
+import com.yass.webview.WebFragment;
 
 
 /**
@@ -15,7 +23,7 @@ import com.yass.base.BaseFragment;
  *
  * Created by wxyass on 2018/8/17.
  */
-public class LowFragment extends BaseFragment {
+public class LowFragment extends BaseFragment implements View.OnClickListener {
 
     public LowFragment() {
     }
@@ -51,5 +59,14 @@ public class LowFragment extends BaseFragment {
 
     private void initData() {
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            /*case R.id.third_rl_1://
+                ((MainFragment) getParentFragment()).start(new BasisViewFragment());
+                break;*/
+        }
     }
 }
