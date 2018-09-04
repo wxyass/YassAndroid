@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Bilibili
  * Copyright (C) 2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.ijk.widget.media;
+package com.ijk.media;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -113,8 +114,13 @@ public class SurfaceRenderView extends SurfaceView implements IRenderView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        mMeasureHelper.doMeasure(widthMeasureSpec, heightMeasureSpec);
-        setMeasuredDimension(mMeasureHelper.getMeasuredWidth(), mMeasureHelper.getMeasuredHeight());
+        if (this.getWidth() != 0) {
+            setMeasuredDimension(this.getWidth(), this.getHeight());
+            return;
+        }
+        int width = getDefaultSize(0, widthMeasureSpec);
+        int height = getDefaultSize(0, heightMeasureSpec);
+        setMeasuredDimension(width, height);
     }
 
     //--------------------

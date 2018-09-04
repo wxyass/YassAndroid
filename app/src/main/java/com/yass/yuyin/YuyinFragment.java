@@ -39,7 +39,7 @@ import java.util.LinkedHashMap;
 
 
 /**
- * 语音Fragment  账号:13264303710
+ * 语音Fragment  科大讯飞账号:13264303710
  * <p>
  * https://blog.csdn.net/qq1271396448/article/details/78818029
  * <p>
@@ -108,7 +108,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
     }
 
 
-    // ---↓  案例一 ↓-----------------------------------------------------------------------
+    // ---↓  方法一  有问题,解析语音json有问题↓-----------------------------------------------------------------------
 
     /**
      * 初始化语音识别
@@ -173,9 +173,9 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
             public String w;
         }
     }
-    // ---↑  案例一 ↑-----------------------------------------------------------------------
+    // ---↑  方法一 ↑-----------------------------------------------------------------------
 
-    // ---↓  案例二 ↓-----------------------------------------------------------------------
+    // ---↓  方法二 ↓-----------------------------------------------------------------------
     private void speekText() {
         //1. 创建 SpeechSynthesizer 对象 , 第二个参数： 本地合成时传 InitListener
         SpeechSynthesizer mTts = SpeechSynthesizer.createSynthesizer(_mActivity, null);
@@ -369,5 +369,5 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
         Toast.makeText(_mActivity, data, Toast.LENGTH_SHORT).show();
 
     }
-    // ---↑ 案例二 ↑-----------------------------------------------------------------------
+    // ---↑ 方法二 ↑-----------------------------------------------------------------------
 }

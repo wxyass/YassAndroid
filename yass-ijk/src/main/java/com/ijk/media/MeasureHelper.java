@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Bilibili
  * Copyright (C) 2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,13 +15,17 @@
  * limitations under the License.
  */
 
-package com.ijk.widget.media;
+package com.ijk.media;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.View;
 
+
+import com.ijk.R;
+
 import java.lang.ref.WeakReference;
+
 
 public final class MeasureHelper {
     private WeakReference<View> mWeakView;
@@ -219,25 +224,25 @@ public final class MeasureHelper {
         String text;
         switch (aspectRatio) {
             case IRenderView.AR_ASPECT_FIT_PARENT:
-                text = "Aspect / Fit parent";
+                text = context.getString(R.string.VideoView_ar_aspect_fit_parent);
                 break;
             case IRenderView.AR_ASPECT_FILL_PARENT:
-                text = "Aspect / Fill parent";
+                text = context.getString(R.string.VideoView_ar_aspect_fill_parent);
                 break;
             case IRenderView.AR_ASPECT_WRAP_CONTENT:
-                text = "Aspect / Wrap conten";
+                text = context.getString(R.string.VideoView_ar_aspect_wrap_content);
                 break;
             case IRenderView.AR_MATCH_PARENT:
-                text = "Free / Fill parent";
+                text = context.getString(R.string.VideoView_ar_match_parent);
                 break;
             case IRenderView.AR_16_9_FIT_PARENT:
-                text = "16:9 / Fit parent";
+                text = context.getString(R.string.VideoView_ar_16_9_fit_parent);
                 break;
             case IRenderView.AR_4_3_FIT_PARENT:
-                text = "4:3 / Fit parent";
+                text = context.getString(R.string.VideoView_ar_4_3_fit_parent);
                 break;
             default:
-                text = "NA";
+                text = context.getString(R.string.N_A);
                 break;
         }
         return text;
