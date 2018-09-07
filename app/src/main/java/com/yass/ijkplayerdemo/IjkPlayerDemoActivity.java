@@ -84,7 +84,7 @@ public class IjkPlayerDemoActivity extends BaseActivity {
         player = new PlayerManager(IjkPlayerDemoActivity.this, mVideoView);
         player.setFullScreenOnly(false);// true横屏   false:由物理感应器决定显示方向
         player.tryFullScreen(true);//  true隐藏ActionBar   false:不隐藏ActionBar
-        player.live(true);
+        //player.live(true);
         //player.setScaleType(PlayerManager.SCALETYPE_WRAPCONTENT);
         //player.setScaleType(PlayerManager.SCALETYPE_FILLPARENT);
         player.setScaleType(PlayerManager.SCALETYPE_16_9);

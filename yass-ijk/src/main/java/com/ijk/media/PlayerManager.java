@@ -409,6 +409,7 @@ public class PlayerManager {
         DebugLog.d("", "onVolumeSlide:" + s);
     }
 
+    // 设置播放进度
     private void onProgressSlide(float percent) {
         long position = videoView.getCurrentPosition();
         long duration = videoView.getDuration();
