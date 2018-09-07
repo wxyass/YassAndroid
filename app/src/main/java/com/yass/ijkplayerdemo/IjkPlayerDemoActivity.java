@@ -35,7 +35,8 @@ public class IjkPlayerDemoActivity extends BaseActivity {
     private String url5 = "http://stream1.grtn.cn/tvs2/sd/live.m3u8?_ts&time=1518428696629";
     private String url6 = "http://218.207.213.137//PLTV/88888888/224/3221225879/index.m3u8";
     private String url7 = "http://183.251.61.207/PLTV/88888888/224/3221225829/index.m3u8";
-    private String url8 = "http://dn-chunyu.qbox.me/fwb/static/images/home/video/video_aboutCY_A.mp4";
+    private String url9 = "http://dn-chunyu.qbox.me/fwb/static/images/home/video/video_aboutCY_A.mp4";
+    private String url8 = "http://covertness.qiniudn.com/android_zaixianyingyinbofangqi_test_baseline.mp4";
 
 
     @Override
