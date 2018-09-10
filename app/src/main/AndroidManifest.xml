@@ -63,9 +63,7 @@
         <activity android:name=".login.LoginActivity"/>
         <activity android:name=".login.RepasswordActivity"/>
         <activity android:name=".low.SecondActivity"/>
-        <activity
-            android:name=".ijkplayerdemo.IjkPlayerDemoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
     </application>
 
 </manifest>

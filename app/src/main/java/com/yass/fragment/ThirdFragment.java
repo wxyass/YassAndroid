@@ -13,12 +13,9 @@ import com.yass.R;
 import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseMainFragment;
 import com.yass.harvic.paintbasis.BasisViewFragment;
-import com.yass.ijkplayerdemo.IjkPlayerDemoActivity;
-import com.yass.ijkplayerdemo.IjkPlayerDemoFragment;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
 import com.yass.toolbar.ToolBarDemoFragment;
-import com.yass.video.common.CommonVideoFragment;
 import com.yass.webview.WebFragment;
 import com.yass.yuyin.YuyinFragment;
 
@@ -104,7 +101,7 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
                 ((MainFragment) getParentFragment()).start(new BasisViewFragment());
                 break;
             case R.id.third_rl_2:// 2 自定义控件之动画篇
-                ((MainFragment) getParentFragment()).start(new CommonVideoFragment());
+                //((MainFragment) getParentFragment()).start(new CommonVideoFragment());
                 break;
             case R.id.third_rl_3:// 3 自定义控件之绘图篇
                 ((MainFragment) getParentFragment()).start(new WebFragment());
@@ -122,9 +119,8 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
             case R.id.third_rl_7:// 语音
                 ((MainFragment) getParentFragment()).start(new YuyinFragment());
                 break;
-            case R.id.third_rl_8:// ijk框架播放网络视频
-                //((MainFragment) getParentFragment()).start(new IjkPlayerDemoFragment());
-                _mActivity.startActivity(new Intent(_mActivity, IjkPlayerDemoActivity.class));
+            case R.id.third_rl_8://
+                // _mActivity.startActivity(new Intent(_mActivity, IjkPlayerDemoActivity.class));
                 break;
             case R.id.third_rl_9://
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));

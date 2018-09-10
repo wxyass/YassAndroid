@@ -1,21 +1,13 @@
 package com.yass.low;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.core.web.WebDelegateImpl;
 import com.yass.R;
-import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseFragment;
-import com.yass.harvic.paintbasis.BasisViewFragment;
-import com.yass.main.MainFragment;
-import com.yass.toolbar.ToolBarDemoFragment;
-import com.yass.video.common.CommonVideoFragment;
-import com.yass.webview.WebFragment;
 
 
 /**

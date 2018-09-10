@@ -16,7 +16,6 @@ import com.yass.base.BaseMainFragment;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
 import com.yass.low.LowFragment;
-import com.yass.video.common.CommonVideoFragment;
 import com.yass.webview.WebFragment;
 
 
@@ -93,8 +92,8 @@ public class FourthFragment extends BaseMainFragment implements View.OnClickList
             case R.id.fourth_rl_01:// Fragment跳转
                 ((MainFragment) getParentFragment()).start(new LowFragment());
                 break;
-            case R.id.fourth_rl_02:// 普通视频
-                ((MainFragment) getParentFragment()).start(new CommonVideoFragment());
+            case R.id.fourth_rl_02:// 2
+                //((MainFragment) getParentFragment()).start(new CommonVideoFragment());
                 break;
             case R.id.fourth_rl_03:// Fragment中嵌套WebView
                 ((MainFragment) getParentFragment()).start(new WebFragment());

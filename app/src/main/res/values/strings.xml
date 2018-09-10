@@ -28,12 +28,12 @@
     <string name="msg_err_netfail">网络请求失败</string>
 
     <!-- fourth -->
-    <string name="fourth_msg_1">Fragment跳转</string>
-    <string name="fourth_msg_2">普通视频</string>
-    <string name="fourth_msg_3">Fragment中嵌套WebView</string>
-    <string name="fourth_msg_4">整体Fragment嵌套WebView</string>
-    <string name="fourth_msg_5">退出系统</string>
-    <string name="fourth_msg_6">Activity跳转</string>
+    <string name="fourth_msg_1">1 Fragment跳转</string>
+    <string name="fourth_msg_2">2 </string>
+    <string name="fourth_msg_3">3 Fragment中嵌套WebView</string>
+    <string name="fourth_msg_4">4 整体Fragment嵌套WebView</string>
+    <string name="fourth_msg_5">5 退出系统</string>
+    <string name="fourth_msg_6">6 Activity跳转</string>
 
     <!-- third -->
     <string name="third_msg_1">1 自定义控件之开篇</string>
@@ -43,7 +43,7 @@
     <string name="third_msg_5">5 Toolbar的使用</string>
     <string name="third_msg_6">6 AppbarLayout的简单用法</string>
     <string name="third_msg_7">7 语音Fragment</string>
-    <string name="third_msg_8">8 ijk框架播放网络视频</string>
+    <string name="third_msg_8">8 </string>
     <string name="third_msg_9">9</string>
     <string name="third_msg_10">10</string>
     <string name="third_msg_11">11</string>

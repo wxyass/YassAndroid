@@ -12,9 +12,7 @@ import com.core.web.WebDelegateImpl;
 import com.yass.R;
 import com.yass.base.BaseFragment;
 import com.yass.main.MainFragment;
-import com.yass.video.lists.VideoListFragment;
 
-import me.yokeyword.fragmentation.SupportFragment;
 
 
 /**
@@ -75,9 +73,9 @@ public class WebFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.dd_system_rl_local:// 本地视频
+            case R.id.web_rl_local:// 本地视频
                 break;
-            case R.id.dd_system_rl_online:// 网络视频
+            case R.id.web_rl_online:// 网络视频
                 break;
         }
     }

@@ -23,7 +23,7 @@
 
     </LinearLayout>
 
-    <!-- 普通视频 -->
+    <!-- 2 -->
     <LinearLayout
         android:id="@+id/fourth_rl_02"
         style="@style/system_title_all">

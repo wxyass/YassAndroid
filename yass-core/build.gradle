@@ -68,12 +68,7 @@ dependencies {
     implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/sun.misc.BASE64Decoder.jar')
 
-    // 图片加载
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    // 视频播放库 视频播放器的管理器,用于管理视频状态(开始,停止)的切换
-    compile 'com.github.danylovolokh:video-player-manager:0.2.0'
-    // 视频播放库 列表可视化工具,包含一些管理视频可视化的常用方法
-    compile 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+
     //Log
     compile 'com.orhanobut:logger:2.1.1'
 
