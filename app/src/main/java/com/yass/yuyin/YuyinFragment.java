@@ -1,39 +1,16 @@
 package com.yass.yuyin;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import com.core.utils.dbtutil.JsonUtil;
-import com.core.utils.jsonutil.JsonParser;
-import com.iflytek.cloud.ErrorCode;
-import com.iflytek.cloud.InitListener;
-import com.iflytek.cloud.RecognizerListener;
-import com.iflytek.cloud.RecognizerResult;
-import com.iflytek.cloud.SpeechConstant;
-import com.iflytek.cloud.SpeechError;
-import com.iflytek.cloud.SpeechRecognizer;
-import com.iflytek.cloud.SpeechSynthesizer;
-import com.iflytek.cloud.SpeechUtility;
-import com.iflytek.cloud.SynthesizerListener;
-import com.iflytek.cloud.ui.RecognizerDialog;
-import com.iflytek.cloud.ui.RecognizerDialogListener;
 import com.yass.R;
 import com.yass.base.BaseFragment;
-import com.yass.harvic.paintbasis.BasisViewFragment;
-import com.yass.main.MainFragment;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
@@ -74,7 +51,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_yuyin, container, false);
         initView(view);
-        SpeechUtility.createUtility(_mActivity, SpeechConstant.APPID + "=5b8ccbd7");
+        // SpeechUtility.createUtility(_mActivity, SpeechConstant.APPID + "=5b8ccbd7");
         return view;
     }
 
@@ -102,17 +79,16 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.btn_startspeech://
                 // initSpeech(_mActivity);
-                startSpeechDialog();
+                // startSpeechDialog();
                 break;
         }
     }
 
+/*
 
     // ---↓  方法一  有问题,解析语音json有问题↓-----------------------------------------------------------------------
 
-    /**
-     * 初始化语音识别
-     */
+    //初始化语音识别
     public void initSpeech(final Context context) {
         //1.创建RecognizerDialog对象
         RecognizerDialog mDialog = new RecognizerDialog(context, null);
@@ -140,9 +116,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
         mDialog.show();
     }
 
-    /**
-     * 解析语音json
-     */
+    //解析语音json
     public String parseVoice(String resultString) {
         // Gson gson = new Gson();
         // Voice voiceBean = gson.fromJson(resultString, Voice.class);
@@ -158,9 +132,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
         return sb.toString();
     }
 
-    /**
-     * 语音对象封装
-     */
+    //语音对象封装
     public class Voice {
 
         public ArrayList<WSBean> ws;
@@ -260,10 +232,12 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
 
     class MyRecognizerDialogListener implements RecognizerDialogListener {
 
-        /**
+        */
+/**
          * @param results
          * @param isLast  是否说完了
-         */
+         *//*
+
         @Override
         public void onResult(RecognizerResult results, boolean isLast) {
             String result = results.getResultString(); //为解析的
@@ -311,9 +285,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
         }
     }
 
-    /**
-     * 语音识别
-     */
+    //语音识别
     private void startSpeech() {
         //1. 创建SpeechRecognizer对象，第二个参数： 本地识别时传 InitListener
         SpeechRecognizer mIat = SpeechRecognizer.createRecognizer(_mActivity, null); //语音识别器
@@ -370,4 +342,7 @@ public class YuyinFragment extends BaseFragment implements View.OnClickListener 
 
     }
     // ---↑ 方法二 ↑-----------------------------------------------------------------------
+*/
+
+
 }

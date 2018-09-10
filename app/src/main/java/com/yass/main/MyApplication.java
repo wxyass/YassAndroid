@@ -7,8 +7,6 @@ import com.core.app.Latte;
 import com.core.icon.FontEcModule;
 import com.core.net.HttpUrl;
 import com.core.net.interceptors.DebugInterceptor;
-import com.iflytek.cloud.SpeechConstant;
-import com.iflytek.cloud.SpeechUtility;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.yass.R;
 
