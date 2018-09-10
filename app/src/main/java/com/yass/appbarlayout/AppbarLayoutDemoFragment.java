@@ -13,6 +13,9 @@ import com.yass.base.BaseFragment;
 /**
  * AppbarLayout的使用
  *
+ * https://www.jianshu.com/p/bbc703a0015e
+ *
+ *
  * Created by wxyass on 2018/8/17.
  */
 public class AppbarLayoutDemoFragment extends BaseFragment {
