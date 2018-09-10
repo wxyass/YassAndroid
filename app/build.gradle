@@ -25,5 +25,4 @@ dependencies {
     implementation project(':yass-core')
     implementation files('libs/IntfBean-0.0.1.jar')
     implementation files('libs/IntfStc-0.0.1.jar')
-    implementation project(':yass-ijk')
 }

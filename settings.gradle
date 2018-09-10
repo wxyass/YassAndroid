@@ -1,1 +1,1 @@
-include ':app', ':yass-core', ':yass-ijk'
+include ':app', ':yass-core'

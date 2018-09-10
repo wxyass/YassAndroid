@@ -68,7 +68,6 @@ dependencies {
     implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/sun.misc.BASE64Decoder.jar')
 
-
     //Log
     compile 'com.orhanobut:logger:2.1.1'
 
