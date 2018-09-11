@@ -1,1 +1,1 @@
-include ':app', ':yass-core', ':yass-bmob'
+include ':app', ':yass-core'

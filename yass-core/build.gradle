@@ -37,7 +37,6 @@ dependencies {
     compile "com.android.support:support-v13:$rootProject.v4Version"
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-
     // 数据库  http://ormlite.com
     compile 'com.j256.ormlite:ormlite-android:5.0'
     compile 'com.j256.ormlite:ormlite-core:5.0'
