@@ -21,6 +21,8 @@ public class BmobActivity extends BaseActivity {
         //Bmob.initialize(this, "1264bbfa6bec335ea1e022889c2dfdd2");
     }
 
+
+
     // 对返回键进行监听
     @Override
     public void onBackPressedSupport() {

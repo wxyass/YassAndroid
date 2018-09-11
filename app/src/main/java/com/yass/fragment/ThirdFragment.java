@@ -12,6 +12,7 @@ import com.core.web.WebDelegateImpl;
 import com.yass.R;
 import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseMainFragment;
+import com.yass.bmob.BmobActivity;
 import com.yass.harvic.paintbasis.BasisViewFragment;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
@@ -119,8 +120,8 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
             case R.id.third_rl_7:// 语音
                 ((MainFragment) getParentFragment()).start(new YuyinFragment());
                 break;
-            case R.id.third_rl_8://
-                // _mActivity.startActivity(new Intent(_mActivity, IjkPlayerDemoActivity.class));
+            case R.id.third_rl_8:// Bmob
+                _mActivity.startActivity(new Intent(_mActivity, BmobActivity.class));
                 break;
             case R.id.third_rl_9://
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
