@@ -37,6 +37,7 @@ dependencies {
     compile "com.android.support:support-v13:$rootProject.v4Version"
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
     // 数据库  http://ormlite.com
     compile 'com.j256.ormlite:ormlite-android:5.0'
     compile 'com.j256.ormlite:ormlite-core:5.0'
@@ -67,7 +68,6 @@ dependencies {
     implementation files('libs/commons-lang-2.6.jar')
     implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/sun.misc.BASE64Decoder.jar')
-    //Log
+    // 日志  https://github.com/orhanobut/logger
     compile 'com.orhanobut:logger:2.1.1'
-    // 科大讯飞语音读写
 }

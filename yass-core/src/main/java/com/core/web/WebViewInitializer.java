@@ -16,7 +16,9 @@ public class WebViewInitializer {
     @SuppressLint("SetJavaScriptEnabled")
     public WebView createWebView(WebView webView) {
 
-        WebView.setWebContentsDebuggingEnabled(true);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WebView.setWebContentsDebuggingEnabled(true);
+        }
 
         //cookie
         final CookieManager cookieManager = CookieManager.getInstance();
@@ -51,8 +53,11 @@ public class WebViewInitializer {
         settings.setSupportZoom(false);
         //文件权限
         settings.setAllowFileAccess(true);
-        settings.setAllowFileAccessFromFileURLs(true);
-        settings.setAllowUniversalAccessFromFileURLs(true);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            //文件权限
+            settings.setAllowFileAccessFromFileURLs(true);
+            settings.setAllowUniversalAccessFromFileURLs(true);
+        }
         settings.setAllowContentAccess(true);
         //缓存相关
         settings.setAppCacheEnabled(true);
