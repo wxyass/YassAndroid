@@ -1,11 +1,13 @@
 package com.yass.bmob.domain;
 
 
+import cn.bmob.v3.BmobObject;
+
 /**
  * Created by wxyass on 2018/9/11.
  */
 
-public class Person  {
+public class Person  extends BmobObject {
     private String name;
     private String address;
 

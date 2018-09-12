@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_app"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.jzvd.JzvdStd
+                android:id="@+id/videoplayer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+
+
+            <Button
+                android:id="@+id/api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="常用Api(UI界面)"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/main_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="在ListView中播放视频 √"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/main_tiny_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="小窗口播放 √"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/direct_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="直接播放"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/main_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="在WebView中播放 √"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -20,6 +20,7 @@ android {
         }
     }
 
+
 }
 
 dependencies {
@@ -28,6 +29,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     //Android Support包
     compile "com.android.support:appcompat-v7:$rootProject.v4Version"
     compile "com.android.support:design:$rootProject.v4Version"
@@ -37,38 +39,61 @@ dependencies {
     compile "com.android.support:support-v13:$rootProject.v4Version"
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
     // 数据库  http://ormlite.com
     compile 'com.j256.ormlite:ormlite-android:5.0'
     compile 'com.j256.ormlite:ormlite-core:5.0'
-    //网络请求依赖
-    compile 'com.squareup.okio:okio:1.13.0'
-    compile 'com.squareup.okhttp3:okhttp:3.8.1'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
     // Fragmentation  https://github.com/YoKeyword/Fragmentation
     compile 'me.yokeyword:fragmentation:1.3.6'
     compile 'me.yokeyword:fragmentation-swipeback:1.3.6'
     compile 'me.yokeyword:eventbus-activity-scope:1.1.0'
     compile 'org.greenrobot:eventbus:3.0.0'
-    // 字体图标
-    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
-    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+
     // loader依赖
     compile 'com.wang.avi:library:2.1.3'
-    // JSON依赖Android版
+
+    // JSON解析依赖 Android版
     compile 'com.alibaba:fastjson:1.1.57.android'
-    //图片处理
-    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
-    compile 'com.github.bumptech.glide:okhttp3-integration:4.0.0-RC0@aar'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
-    // pinyin
+
+    // 拼音处理
     compile 'com.github.SilenceDut:jpinyin:v1.0'
-    //
+
+    // java类补充库(适配6.0)
     implementation files('libs/commons-lang-2.6.jar')
     implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/sun.misc.BASE64Decoder.jar')
-    // 日志  https://github.com/orhanobut/logger
+
+    // 日志
     compile 'com.orhanobut:logger:2.1.1'
+
+    // Bmob后台云
+    compile 'cn.bmob.android:bmob-sdk:3.6.3'
+
+    // -----↓ 若不使用Bmob后台云,需要将exclude group及中小括号去掉,并将下面所有//打开 ↓--------------
+
+    //网络请求依赖
+    compile('com.squareup.okhttp3:okhttp:3.8.0') { exclude group: 'com.squareup.okio' }
+    compile('com.squareup.retrofit2:converter-scalars:2.3.0') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    compile('com.squareup.retrofit2:retrofit:2.3.0') { exclude group: 'com.squareup.okhttp3' }
+    //compile 'com.squareup.okio:okio:1.13.0'
+
+    // 字体图标
+    compile('com.joanzapata.iconify:android-iconify-fontawesome:2.2.2') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.joanzapata.iconify:android-iconify-ionicons:2.2.2') {
+        exclude group: 'com.android.support'
+    }
+
+    //图片处理
+    compile 'com.github.bumptech.glide:okhttp3-integration:4.0.0-RC0@aar'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+    compile('com.github.bumptech.glide:glide:4.0.0-RC0') { exclude group: 'com.android.support' }
+
+    // -----↑ 若不使用Bmob后台云,需要将exclude group及中小括号去掉,并将下面所有//打开 ↑--------------
 
 
 }

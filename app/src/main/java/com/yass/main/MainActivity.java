@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import com.yass.R;
 import com.yass.base.BaseActivity;
 
+import cn.bmob.v3.Bmob;
 import me.yokeyword.fragmentation.anim.DefaultHorizontalAnimator;
 import me.yokeyword.fragmentation.anim.FragmentAnimator;
 
@@ -23,6 +24,8 @@ public class MainActivity extends BaseActivity {
         if (findFragment(MainFragment.class) == null) {
             loadRootFragment(R.id.fl_container, MainFragment.newInstance());
         }
+
+        //Bmob.initialize(this, "4c1af865be4b31c8e2bae4e8f1f2b78c");
     }
 
     @Override

@@ -14,6 +14,7 @@ import com.yass.appbarlayout.AppbarLayoutDemoFragment;
 import com.yass.base.BaseMainFragment;
 import com.yass.bmob.BmobActivity;
 import com.yass.harvic.paintbasis.BasisViewFragment;
+import com.yass.jiecao.JieCaoMainActivity;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
 import com.yass.toolbar.ToolBarDemoFragment;
@@ -123,8 +124,8 @@ public class ThirdFragment extends BaseMainFragment implements View.OnClickListe
             case R.id.third_rl_8:// Bmob
                 _mActivity.startActivity(new Intent(_mActivity, BmobActivity.class));
                 break;
-            case R.id.third_rl_9://
-                _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
+            case R.id.third_rl_9:// jiecao播放
+                _mActivity.startActivity(new Intent(_mActivity, JieCaoMainActivity.class));
                 break;
             case R.id.third_rl_10://
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));

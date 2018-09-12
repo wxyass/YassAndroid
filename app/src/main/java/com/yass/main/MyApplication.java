@@ -7,6 +7,7 @@ import com.core.app.Latte;
 import com.core.icon.FontEcModule;
 import com.core.net.HttpUrl;
 import com.core.net.interceptors.DebugInterceptor;
+import com.danikula.videocache.HttpProxyCacheServer;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.yass.R;
 
@@ -59,5 +60,14 @@ public class MyApplication extends Application {
 
     public static Context getAppContext() {
         return MyApplication.context;
+    }
+
+    private HttpProxyCacheServer proxy;
+    public static HttpProxyCacheServer getProxy(Context context) {
+        MyApplication app = (MyApplication) context.getApplicationContext();
+        return app.proxy == null ? (app.proxy = app.newProxy()) : app.proxy;
+    }
+    private HttpProxyCacheServer newProxy() {
+        return new HttpProxyCacheServer(this);
     }
 }
