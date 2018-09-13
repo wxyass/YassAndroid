@@ -1,4 +1,4 @@
-package com.jiecao912;
+package com.jiecaov;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.jiecao912.test", appContext.getPackageName());
+        assertEquals("com.jiecaov.test", appContext.getPackageName());
     }
 }

@@ -47,6 +47,7 @@
     <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+
     <application
         android:name=".main.MyApplication"
         android:allowBackup="true"
@@ -55,7 +56,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppTheme">
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".jiecao.JieCaoMainActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -68,7 +71,7 @@
         <activity android:name=".bmob.BmobActivity"/>
 
         <activity
-            android:name=".jiecao.JieCaoMainActivity"
+            android:name=".main.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>
 

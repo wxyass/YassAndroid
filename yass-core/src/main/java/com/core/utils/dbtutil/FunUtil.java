@@ -710,7 +710,8 @@ public class FunUtil {
 		cv.drawText(mstrTitle2, w - 206, h - 50, p);
 		cv.drawText(mstrTitle3, w - 206, h - 30, p);
 		cv.drawText(mstrTitle4, w - 206, h - 10, p);
-		cv.save(Canvas.ALL_SAVE_FLAG);// 保存
+		//cv.save(Canvas.ALL_SAVE_FLAG);// 保存
+		cv.save();// 保存
 		cv.restore();// 存储
 
 		return newb;

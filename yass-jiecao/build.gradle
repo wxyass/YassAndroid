@@ -28,5 +28,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    // 视频播放 jiaozivideoplayer需要3大播放框架的集成 ijkplayer,videocache,exoplayer
+    compile 'cn.jzvd:jiaozivideoplayer:6.3.1'
+
+
 
 }
