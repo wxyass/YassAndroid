@@ -2,16 +2,15 @@ package com.yass.jiecao;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import com.bumptech.glide.Glide;
 import com.yass.R;
-import com.yass.base.BaseActivity;
-import com.yass.main.MainActivity;
-import com.yass.main.MyApplication;
+import com.yass.jiecao.CustomView.MyJzvdStd;
 
 import cn.jzvd.JZUserAction;
 import cn.jzvd.JZUserActionStd;
@@ -19,33 +18,25 @@ import cn.jzvd.Jzvd;
 import cn.jzvd.JzvdStd;
 
 /**
- * 播放主Activity
+ * Created by Nathen on 16/7/22.
  */
-public class JieCaoMainActivity extends BaseActivity implements View.OnClickListener {
+public class ActivityMain extends AppCompatActivity implements View.OnClickListener {
 
-    com.yass.jiecao.CustomView.MyJzvdStd jzvdStd;
 
-    Button mTinyWindow;
-    Button mListView;
-    Button mDirectFullscreen;
-    Button mApi;
-    Button mWebView;
+    MyJzvdStd myJzvdStd;
 
-    String mp4url = "http://images.wxyass.com/wxyass/images/TroubleMaker.mp4";
-    String imgurl = "http://images.wxyass.com/wxyass/images/20180909160358.png";
+    Button mTinyWindow, mListView, mDirectFullscreen, mApi, mWebView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jiecao_main);
+        setContentView(R.layout.activity_main);
 
-        jzvdStd = (com.yass.jiecao.CustomView.MyJzvdStd) findViewById(R.id.videoplayer);
-
-        mTinyWindow = (Button) findViewById(R.id.main_tiny_window);
-        mDirectFullscreen = (Button) findViewById(R.id.direct_play);
-        mListView = (Button) findViewById(R.id.main_listview);
-        mApi = (Button) findViewById(R.id.api);
-        mWebView = (Button) findViewById(R.id.main_webview);
+        mTinyWindow = findViewById(R.id.tiny_window);
+        mDirectFullscreen = findViewById(R.id.direct_play);
+        mListView = findViewById(R.id.listview);
+        mApi = findViewById(R.id.api);
+        mWebView = findViewById(R.id.webview);
 
         mTinyWindow.setOnClickListener(this);
         mListView.setOnClickListener(this);
@@ -53,24 +44,12 @@ public class JieCaoMainActivity extends BaseActivity implements View.OnClickList
         mApi.setOnClickListener(this);
         mWebView.setOnClickListener(this);
 
-        jzvdStd.setUp(mp4url, "饺子快长大", JzvdStd.SCREEN_WINDOW_NORMAL);
-        Glide.with(this).load(imgurl).into(jzvdStd.thumbImageView);
+        myJzvdStd = findViewById(R.id.jz_video);
+        myJzvdStd.setUp("http://jzvd.nathen.cn/342a5f7ef6124a4a8faf00e738b8bee4/cf6d9db0bd4d41f59d09ea0a81e918fd-5287d2089db37e62345123a1be272f8b.mp4"
+                , "饺子快长大", JzvdStd.SCREEN_WINDOW_NORMAL);
+        Glide.with(this).load("http://jzvd-pic.nathen.cn/jzvd-pic/1bb2ebbe-140d-4e2e-abd2-9e7e564f71ac.png").into(myJzvdStd.thumbImageView);
         Jzvd.setJzUserAction(new MyUserActionStd());
 
-    }
-
-    // 对返回键进行监听
-    @Override
-    public void onBackPressedSupport() {
-        if (Jzvd.backPress()) {
-            return;
-        }
-
-        if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
-            pop();
-        } else {
-            ActivityCompat.finishAfterTransition(this);
-        }
     }
 
     @Override
@@ -80,26 +59,33 @@ public class JieCaoMainActivity extends BaseActivity implements View.OnClickList
     }
 
     @Override
+    public void onBackPressed() {
+        if (Jzvd.backPress()) {
+            return;
+        }
+        super.onBackPressed();
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.api:
-                startActivity(new Intent(MyApplication.getAppContext(), ActivityApi.class));
+                startActivity(new Intent(ActivityMain.this, ActivityApi.class));
                 break;
-            case R.id.main_listview://
-                startActivity(new Intent(JieCaoMainActivity.this, ActivityListView.class));
+            case R.id.listview:
+                startActivity(new Intent(ActivityMain.this, ActivityListView.class));
                 break;
-            case R.id.main_tiny_window:
-                startActivity(new Intent(JieCaoMainActivity.this, ActivityTinyWindow.class));
+            case R.id.tiny_window:
+                startActivity(new Intent(ActivityMain.this, ActivityTinyWindow.class));
                 break;
             case R.id.direct_play:
-                startActivity(new Intent(JieCaoMainActivity.this, ActivityDirectPlay.class));
+                startActivity(new Intent(ActivityMain.this, ActivityDirectPlay.class));
                 break;
-            case R.id.main_webview://
-                startActivity(new Intent(JieCaoMainActivity.this, ActivityWebView.class));
+            case R.id.webview:
+                startActivity(new Intent(ActivityMain.this, ActivityWebView.class));
                 break;
         }
     }
-
 
     /**
      * 这只是给埋点统计用户数据用的，不能写和播放相关的逻辑，监听事件请参考MyJzvdStd，复写函数取得相应事件
@@ -161,4 +147,5 @@ public class JieCaoMainActivity extends BaseActivity implements View.OnClickList
             }
         }
     }
+
 }

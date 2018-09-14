@@ -15,7 +15,6 @@ import com.yass.base.BaseMainFragment;
 import com.yass.bmob.BmobActivity;
 import com.yass.harvic.paintbasis.BasisViewFragment;
 import com.yass.jiecao.JieCaoMainActivity;
-import com.yass.jiecao.JieCaoMainFragment;
 import com.yass.low.SecondActivity;
 import com.yass.main.MainFragment;
 import com.yass.toolbar.ToolBarDemoFragment;

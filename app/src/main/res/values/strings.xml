@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">牙牙学语</string>
+    <string name="app_name">YaYaXueYu</string>
 
     <!--   工具类  tag -->
     <item type="id" name="tag_viewholder"></item>
