@@ -108,6 +108,7 @@ public class FourthFragment extends BaseMainFragment implements View.OnClickList
             case R.id.fourth_rl_06:// Activity跳转
                 _mActivity.startActivity(new Intent(_mActivity, SecondActivity.class));
                 break;
+
         }
     }
 
