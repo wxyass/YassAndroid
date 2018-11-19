@@ -93,7 +93,13 @@ public class FourthFragment extends BaseMainFragment implements View.OnClickList
                 ((MainFragment) getParentFragment()).start(new LowFragment());
                 break;
             case R.id.fourth_rl_02:// 2
-                //((MainFragment) getParentFragment()).start(new CommonVideoFragment());
+
+                StringBuffer buffer = new StringBuffer();
+                buffer.append("http://192.168.0.35/app-main-intf/index.html");
+
+                //final WebDelegateImpl index = WebDelegateImpl.create("index.html");
+                final WebDelegateImpl index = WebDelegateImpl.create(buffer.toString());
+                ((MainFragment) getParentFragment()).start(index);
                 break;
             case R.id.fourth_rl_03:// Fragment中嵌套WebView
                 ((MainFragment) getParentFragment()).start(new WebFragment());

@@ -10,6 +10,7 @@ import com.core.net.interceptors.DebugInterceptor;
 import com.danikula.videocache.HttpProxyCacheServer;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.yass.R;
+import com.yass.event.TestEvent;
 
 import me.yokeyword.fragmentation.Fragmentation;
 
@@ -46,6 +47,7 @@ public class MyApplication extends Application {
                 .withApiHost(HttpUrl.API_HOST)// 配置ApiHost
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))// 拦截url请求中包含test的url请求
                 .withJavascriptInterface("latte")
+                .withWebEvent("back", new TestEvent())
                 //添加Cookie同步拦截器
                 .withWebHost("https://www.baidu.com/")
                 .configure();// 修改→配置完成的标记true
